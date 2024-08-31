@@ -1,0 +1,41 @@
+.contact {
+  display: flex;
+  width: 300px;
+
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  align-items: center;
+  background-color: #dd88eb;
+  box-shadow: rgb(0 0 0 / 72%) 1px 0px 22px 10px;
+}
+
+.details {
+  flex: 1;
+}
+
+.field {
+  margin: 5px 0;
+}
+
+.contact-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.btn {
+  display: inline-flex;
+  padding: 5px 7px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 14px;
+  background-color: cyan;
+  color: black;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: orange;
+}

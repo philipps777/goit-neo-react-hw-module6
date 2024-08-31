@@ -1,0 +1,83 @@
+.wrapper {
+  box-shadow: rgb(0 0 0 / 72%) 1px 0px 22px 10px;
+  border-radius: 25px;
+  margin-bottom: 50px;
+  background-color: #dd88eb;
+}
+.form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+}
+.field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-bottom: 1.75rem;
+}
+.label {
+  display: flex;
+  flex-direction: column;
+}
+
+.span {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input {
+  padding: 0.8rem;
+  border: 3px solid cyan;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+  outline: none;
+  border-color: #ccff33;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+input:has(+ .error) {
+  box-shadow: 0 0 0 4px #da2c38;
+  border-color: #da2c38;
+}
+
+.btn {
+  display: inline-flex;
+  padding: 5px 7px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 14px;
+  background-color: cyan;
+  color: black;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: orange;
+}
+
+.error {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 150%;
+  font-size: 16px;
+  text-align: center;
+  color: #d80032;
+  animation: fade 150ms ease-in 150ms both;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
